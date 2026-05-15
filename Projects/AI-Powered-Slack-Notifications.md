@@ -1,3 +1,4 @@
+<img width="1000" height="750" alt="Zapier Portfolio (2)" src="https://github.com/user-attachments/assets/f441f2fd-4078-46ed-bcb5-2f6241531eac" />
 AI-Powered Slack Notifications System
 ​# Project Overview
 ​This automation uses Artificial Intelligence to analyze incoming Gmail attachments and send smart, instant alerts to team members on Slack. Instead of just forwarding files, the AI parses the data to provide context, making team collaboration faster and smarter.
