@@ -1,0 +1,43 @@
+# 🛠️ HubSpot Automated Support Pipeline & Customer Touchpoint Workflow
+
+An automated CRM workflow built within **HubSpot Service Hub** designed to optimize initial customer touchpoints, reduce response latency, and eliminate duplicate messaging logic.
+
+---
+
+## 🚀 Project Overview
+This project solves a common operational challenge in customer service: ensuring immediate, automated acknowledgement of incoming support tickets without triggering duplicate notifications for real-time channels (like live chat). 
+
+By establishing explicit entry criteria and logic filters, the workflow automatically triggers a **"Ticket Received"** confirmation email only for specific, structured channels, significantly improving customer satisfaction and setting clear communication expectations.
+
+---
+
+## 🛠 Functional Logic & Architecture
+
+The workflow utilizes conditional enrollment triggers structured as follows:
+
+### 1. Enrollment Triggers (Group 1)
+* **Ticket Status:** `is any of New (Support Pipeline)`
+  * Ensures that only newly generated tickets enter the automation sequence.
+* **Source Filter:** `is none of Chat` **AND** `is not empty`
+  * **Operational Rule:** Excludes live chat sessions because chat systems natively provide immediate, in-app agent responses. Sending an automated email for a live chat would create an intrusive and redundant customer experience.
+  * **Data Integrity Rule:** Ensures the ticket source is explicitly identified before dispatching email communications.
+
+### 2. Workflow Actions
+* **Action 1:** Send automated marketing/transactional email using the **"Ticket received"** template.
+* **Re-enrollment:** Configured to `OFF` by default to prevent repetitive confirmation emails on a single active customer issue.
+
+---
+
+## 📊 Business Impact & Key Metrics
+* **Instant First Contact Resolution (FCR) Impression:** Customers receive acknowledgement within < 2 minutes of ticket submission.
+* **Operational Efficiency:** Zero duplication of touches on chat-based support channels, allowing support agents to focus entirely on resolution rather than manual communication tracking.
+* **Scalability:** Built using HubSpot native logic, capable of handling high volumes of inbound support traffic seamlessly.
+
+---
+
+## ⚙️ How to Replicate This Setup
+1. **HubSpot Setup:** Navigate to *Automation > Workflows* and create a **Ticket-based workflow** from scratch.
+2. **Configure Triggers:** Set enrollment filters matching the `Ticket Status` and `Source` conditions detailed above.
+3. **Draft Communication:** Create an automated email template titled *Ticket Received* in your HubSpot Email Marketing tool.
+4. **Link Action:** Add a "Send Email" action block to the workflow canvas and select the drafted template.
+5. **Review and Publish:** Turn on re-enrollment safety checks and set the workflow to active.
