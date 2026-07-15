@@ -20,14 +20,21 @@ I specialize in streamlining business operations using **AI Automation** and **C
 Professional Experience
 ​Automation & CRM Specialist | Freelancer (Upwork)
 ​May 2026 – Present
+
 ​I help business owners connect their favorite apps, automate repetitive admin tasks, and organize their customer data without hiring a full dev team.
-​I write custom Python scripts to handle complex data tasks that standard automation tools can’t solve on their own.
-​I set up secure custom API connections and OAuth credentials (like Gmail API in Google Cloud Console) so client integrations work safely and without interruptions.
-​Workflow Developer | Fatima Design Lab
-​April 2026 – Present
-​Built a smart sales follow-up system that captures leads from webhooks, schedules automated emails, alerts the team on Slack, and updates their ClickUp board instantly.
-​Designed and automated backend operations for our Etsy and Amazon stores to keep inventory, listings, and customer updates in sync.
-​📁 Featured Projects
+​
+I write custom Python scripts to handle complex data tasks that standard automation tools can’t solve on their own.
+​
+I set up secure custom API connections and OAuth credentials (like Gmail API in Google Cloud Console) so client integrations work safely and without interruptions.
+​
+Workflow Developer | Fatima Design Lab
+​April 2025 – Present
+​
+Built a smart sales follow-up system that captures leads from webhooks, schedules automated emails, alerts the team on Slack, and updates their ClickUp board instantly.
+​
+Designed and automated backend operations for our Etsy and Amazon stores to keep inventory, listings, and customer updates in sync.
+​
+📁 Featured Projects
 ​1. Smart Sales Follow-Up Automation (Make.com & ClickUp)
 ​The Problem: The team was manually copying lead details from forms to ClickUp and forgetting to follow up on time.
 ​The Solution: I built a master scenario in Make.com that automatically tracks leads, moves their status in ClickUp, and triggers scheduled emails so no prospect gets left behind.
